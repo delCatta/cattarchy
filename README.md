@@ -10,6 +10,8 @@ Use `stow` to get my config files!
 
 ### Waybar
 
-I have my Logitec BRIO sitting in the middle of my monitor. It covers the time when centered.
+- Time to the Right: I have my Logitec BRIO sitting in the middle of my monitor. The time gets covered when centered.
+- More workspaces: I have a wide monitor.  
+
 
 
