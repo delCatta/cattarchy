@@ -18,15 +18,17 @@ $php\
 $java\
 $kotlin\
 $haskell\
-$python\
-[](fg:teal bg:blue)\
 $docker_context\
-[](fg:blue bg:purple)\
+[](fg:teal bg:red)\
+${custom.ruby}\
+[](fg:red bg:purple)\
 $time\
 [ ](fg:purple)\
 $line_break$character"""
 
 palette = 'catppuccin_mocha'
+
+command_timeout = 1000
 
 [palettes.gruvbox_dark]
 color_fg0 = '#fbf1c7'
@@ -166,6 +168,12 @@ symbol = ""
 style = "bg:teal"
 format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
 
+[custom.ruby]
+symbol = ''
+command = 'version=$(ruby -v | cut -d" " -f2); [ -z "$version" ] && echo "$version" || echo "$version"'
+format = '[[ $symbol( $output) ](fg:base bg:red)]($style)'
+when = 'test -f Gemfile.lock'
+
 [docker_context]
 symbol = ""
 style = "bg:mantle"
@@ -178,7 +186,7 @@ style = "bg:peach"
 format = '[[  $time ](fg:mantle bg:purple)]($style)'
 
 [line_break]
-disabled = false
+disabled = true
 
 [character]
 disabled = false
