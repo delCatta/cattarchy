@@ -1,0 +1,23 @@
+general.import = [ 
+  "~/.config/alacritty/catppuccin-mocha.toml"
+]
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+normal = { family = "MesloLGS Nerd Font Mono", style = "Regular" }
+bold = { family = "MesloLGS Nerd Font Mono", style = "Bold" }
+italic = { family = "MesloLGS Nerd Font Mono", style = "Italic" }
+size = 14
+
+[window]
+padding.x = 14
+padding.y = 14
+decorations = "None"
+opacity = 0.98
+
+[keyboard]
+bindings = [
+{ key = "F11", action = "ToggleFullscreen" }
+]
